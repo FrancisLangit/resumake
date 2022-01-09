@@ -1,9 +1,15 @@
-import { Form } from './components/Form/Form';
+import { useState } from 'react';
+
+import { Field } from './components/Field/Field';
 
 const App = () => {
+  const [name, setName] = useState('');
+
   return (
     <div>
-      <Form />
+      <Field label="Name" setDisplay={setName} />
+
+      <div>{name}</div>
     </div>
   );
 };

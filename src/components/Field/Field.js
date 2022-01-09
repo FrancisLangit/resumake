@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-const Field = ({ label }) => {
+const Field = ({ label, setDisplay }) => {
   const [input, setInput] = useState('');
 
   const handleChange = (event) => {
     setInput(event.target.value);
+    setDisplay(event.target.value);
   };
 
   return (
