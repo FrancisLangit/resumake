@@ -1,5 +1,7 @@
+import { Field } from '../Field/Field';
+
 const Form = () => {
-  return <div>This is a form!</div>;
+  return <Field />;
 };
 
 export { Form };
