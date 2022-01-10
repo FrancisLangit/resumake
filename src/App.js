@@ -22,9 +22,23 @@ const App = () => {
       <hr />
 
       {education}
+      <button
+        onClick={() =>
+          setEducation([...education, <Education key={uuidv4()} />])
+        }
+      >
+        Add Education
+      </button>
       <hr />
 
       {experience}
+      <button
+        onClick={() =>
+          setExperience([...experience, <Experience key={uuidv4()} />])
+        }
+      >
+        Add Experience
+      </button>
     </div>
   );
 };
