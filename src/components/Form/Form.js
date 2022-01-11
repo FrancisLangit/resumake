@@ -6,19 +6,14 @@ import style from './Form.module.scss';
 const Form = ({ fields }) => {
   const [isDelete, setIsDelete] = useState(false);
 
-  if (isDelete) {
-    return null;
-  } else {
-    return (
-      <div className={style.Form}>
-        {fields.map((field) => {
-          return <div key={uuidv4()}>{field}</div>;
-        })}
-        <hr />
-        <button onClick={() => setIsDelete(!isDelete)}>Delete</button>
-      </div>
-    );
-  }
+  return isDelete ? null : (
+    <div className={style.Form}>
+      {fields.map((f) => (
+        <div key={uuidv4()}>{f}</div>
+      ))}
+      <button onClick={() => setIsDelete(!isDelete)}>Delete</button>
+    </div>
+  );
 };
 
 export { Form };
