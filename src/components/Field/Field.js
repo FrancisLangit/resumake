@@ -11,6 +11,7 @@ const Field = ({ label }) => {
     <div>
       {label}
       <input value={field} onChange={handleChange} />
+      <button></button>
       <div>{field}</div>
     </div>
   );
