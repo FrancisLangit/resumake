@@ -1,24 +1,7 @@
 import { useState } from 'react';
 
-const FieldText = ({ isEdit, text, setText }) => {
-  const handleChange = (event) => {
-    setText(event.target.value);
-  };
-
-  return (
-    <div>{isEdit ? <input value={text} onChange={handleChange} /> : text}</div>
-  );
-};
-
-const FieldButton = ({ isEdit, setIsEdit }) => {
-  const handleClick = () => {
-    setIsEdit(!isEdit);
-  };
-
-  return (
-    <button onClick={() => handleClick()}>{isEdit ? 'Submit' : 'Edit'}</button>
-  );
-};
+import { FieldButton } from './FieldButton';
+import { FieldText } from './FieldText';
 
 const Field = ({ label }) => {
   const [isEdit, setIsEdit] = useState(true);
