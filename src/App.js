@@ -9,7 +9,6 @@ const App = () => {
       <Field label="Name" />
       <Field label="Email" />
       <Field label="Number" />
-      <hr />
       <Section form={<Education />} />
       <Section form={<Experience />} />
     </div>
