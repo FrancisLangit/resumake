@@ -5,9 +5,9 @@ const Education = () => {
   return (
     <Form
       fields={[
-        <Field label="School" />,
-        <Field label="Degree" />,
-        <Field label="Graduation Date" />,
+        <Field placeholder="School" />,
+        <Field placeholder="Degree" />,
+        <Field placeholder="Graduation Date" />,
       ]}
     />
   );

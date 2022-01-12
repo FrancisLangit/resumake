@@ -6,9 +6,9 @@ import { Section } from './components/Section/Section';
 const App = () => {
   return (
     <div>
-      <Field label="Name" />
-      <Field label="Email" />
-      <Field label="Number" />
+      <Field placeholder="Name" />
+      <Field placeholder="Email" />
+      <Field placeholder="Number" />
       <Section form={<Education />} />
       <Section form={<Experience />} />
     </div>
