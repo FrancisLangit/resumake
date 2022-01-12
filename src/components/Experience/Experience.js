@@ -9,7 +9,7 @@ const Experience = () => {
         <Field placeholder="Position" />,
         <Field placeholder="Start" />,
         <Field placeholder="End" />,
-        <Field placeholder="Description" />,
+        <Field placeholder="Description" isTextarea={true} />,
       ]}
     />
   );

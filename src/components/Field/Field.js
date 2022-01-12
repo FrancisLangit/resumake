@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Field = ({ placeholder }) => {
+const Field = ({ placeholder, isTextarea }) => {
   const [isEdit, setIsEdit] = useState(true);
   const [text, setText] = useState('');
 
@@ -14,16 +14,22 @@ const Field = ({ placeholder }) => {
   };
 
   if (isEdit) {
+    const inputProps = {
+      value: text,
+      onChange: (e) => handleChange(e),
+      placeholder: placeholder,
+    };
+
     return (
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input onChange={(e) => handleChange(e)} placeholder={placeholder} />
+        {isTextarea ? <textarea {...inputProps} /> : <input {...inputProps} />}
         <button type="submit">Submit</button>
       </form>
     );
   } else {
     return (
       <div>
-        {text}
+        <span style={{ 'white-space': 'pre' }}>{text}</span>
         <button onClick={() => setIsEdit(!isEdit)}>Edit</button>
       </div>
     );

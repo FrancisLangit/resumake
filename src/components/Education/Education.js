@@ -8,6 +8,7 @@ const Education = () => {
         <Field placeholder="School" />,
         <Field placeholder="Degree" />,
         <Field placeholder="Graduation Date" />,
+        <Field placeholder="Description" isTextarea={true} />,
       ]}
     />
   );

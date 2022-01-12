@@ -9,8 +9,10 @@ const App = () => {
       <Field placeholder="Name" />
       <Field placeholder="Email" />
       <Field placeholder="Number" />
-      <Section form={<Education />} />
       <Section form={<Experience />} />
+      <Section form={<Education />} />
+      <Field placeholder="Skills" isTextarea={true} />
+      <Field placeholder="Interests" isTextarea={true} />
     </div>
   );
 };
