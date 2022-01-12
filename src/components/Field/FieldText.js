@@ -4,13 +4,13 @@ const FieldText = ({ isEdit, text, setText, placeholder }) => {
   };
 
   return (
-    <div>
+    <>
       {isEdit ? (
         <input value={text} onChange={handleChange} placeholder={placeholder} />
       ) : (
         text
       )}
-    </div>
+    </>
   );
 };
 
