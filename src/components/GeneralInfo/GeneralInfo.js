@@ -1,9 +1,11 @@
 import { Field } from '../Field/Field';
 
+import style from './GeneralInfo.module.scss';
+
 const GeneralInfo = () => {
   return (
-    <div>
-      <Field name="Name" />
+    <div className={style.container}>
+      <Field className={style.name} name="Name" />
       <Field name="Email" />
       <Field name="Number" />
       <Field name="Location" />
