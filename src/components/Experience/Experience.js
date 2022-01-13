@@ -5,11 +5,11 @@ const Experience = () => {
   return (
     <Form
       fields={[
-        <Field placeholder="Company" />,
-        <Field placeholder="Position" />,
-        <Field placeholder="Start" />,
-        <Field placeholder="End" />,
-        <Field placeholder="Description" isTextarea={true} />,
+        <Field name="Company" />,
+        <Field name="Position" />,
+        <Field name="Start" />,
+        <Field name="End" />,
+        <Field name="Description" isTextarea={true} />,
       ]}
     />
   );

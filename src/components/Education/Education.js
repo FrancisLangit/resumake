@@ -5,10 +5,10 @@ const Education = () => {
   return (
     <Form
       fields={[
-        <Field placeholder="School" />,
-        <Field placeholder="Degree" />,
-        <Field placeholder="Graduation Date" />,
-        <Field placeholder="Description" isTextarea={true} />,
+        <Field name="School" />,
+        <Field name="Degree" />,
+        <Field name="Graduation Date" />,
+        <Field name="Description" isTextarea={true} />,
       ]}
     />
   );

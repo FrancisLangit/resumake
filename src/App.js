@@ -6,13 +6,13 @@ import { Section } from './components/Section/Section';
 const App = () => {
   return (
     <div>
-      <Field placeholder="Name" />
-      <Field placeholder="Email" />
-      <Field placeholder="Number" />
+      <Field name="Name" />
+      <Field name="Email" />
+      <Field name="Number" />
       <Section form={<Experience />} />
       <Section form={<Education />} />
-      <Field placeholder="Skills" isTextarea={true} />
-      <Field placeholder="Interests" isTextarea={true} />
+      <Field name="Skills" isTextarea={true} />
+      <Field name="Interests" isTextarea={true} />
     </div>
   );
 };
