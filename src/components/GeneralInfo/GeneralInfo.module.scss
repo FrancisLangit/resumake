@@ -1,5 +1,17 @@
 .container {
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 75px;
+}
+
+.name div {
+  font-size: 75px;
+  font-weight: bolder;
+}
+
+.details div {
+  border-radius: 7.5px;
+  border: 1px solid black;
+  float: left;
+  font-size: 12px;
+  margin-right: 20px;
+  padding: 10px;
 }
