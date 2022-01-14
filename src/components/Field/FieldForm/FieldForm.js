@@ -1,3 +1,5 @@
+import style from './FieldForm.module.scss';
+
 const FieldForm = ({
   setIsForm,
   inputValue,
@@ -17,7 +19,7 @@ const FieldForm = ({
   };
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form onSubmit={(e) => handleSubmit(e)} className={style.FieldForm}>
       {isTextarea ? <textarea {...inputProps} /> : <input {...inputProps} />}
       <button type="submit">Submit</button>
     </form>
