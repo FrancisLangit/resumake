@@ -1,8 +1,9 @@
+import style from './FieldDisplay.module.scss';
+
 const FieldDisplay = ({ text, setIsForm }) => {
   return (
-    <div>
-      <span style={{ whiteSpace: 'pre' }}>{text}</span>
-      <button onClick={() => setIsForm(true)}>Edit</button>
+    <div className={style.FieldDisplay} onClick={() => setIsForm(true)}>
+      {text}
     </div>
   );
 };

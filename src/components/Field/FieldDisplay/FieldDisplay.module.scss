@@ -1,0 +1,9 @@
+.FieldDisplay {
+  cursor: pointer;
+  white-space: pre;
+
+  &:hover {
+    color: grey;
+    text-decoration: underline;
+  }
+}
