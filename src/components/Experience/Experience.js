@@ -7,8 +7,7 @@ const Experience = () => {
       fields={[
         <Field name="Company" />,
         <Field name="Position" />,
-        <Field name="Start" />,
-        <Field name="End" />,
+        <Field name="Start — End" />,
         <Field name="Description" isTextarea={true} />,
       ]}
     />
