@@ -1,12 +1,21 @@
-.FieldForm {
-  margin-bottom: 10px;
+.form {
+  margin-bottom: 15px;
+}
 
-  input,
-  textarea {
-    border-radius: 5px;
-    border: 1px solid grey;
-    font-family: 'Roboto Mono';
-    margin-bottom: 5px;
-    width: 100%;
-  }
+.input {
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-family: 'Roboto Mono';
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.submit {
+  background-color: grey;
+  border-radius: 5px;
+  border: 1px solid grey;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto Mono';
+  font-size: 12px;
 }

@@ -13,15 +13,19 @@ const FieldForm = ({
   };
 
   const inputProps = {
-    value: inputValue,
-    onChange: (event) => setInputValue(event.target.value),
+    className: style.input,
     placeholder: inputPlaceholder,
+    value: inputValue,
+
+    onChange: (event) => setInputValue(event.target.value),
   };
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} className={style.FieldForm}>
+    <form onSubmit={(e) => handleSubmit(e)} className={style.form}>
       {isTextarea ? <textarea {...inputProps} /> : <input {...inputProps} />}
-      <button type="submit">Submit</button>
+      <button type="submit" className={style.submit}>
+        Submit
+      </button>
     </form>
   );
 };
