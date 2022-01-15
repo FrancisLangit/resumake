@@ -1,0 +1,23 @@
+.container {
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.fields {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 15px;
+}
+
+.delete {
+  $color: #dc3545;
+
+  background: white;
+  border-radius: 5px;
+  border: 1px solid $color;
+  color: $color;
+  cursor: pointer;
+  font-family: 'Roboto Mono';
+  font-size: 16px;
+}
