@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
+import style from './Section.module.scss';
+
 const Section = ({ form }) => {
   const [forms, setForms] = useState([<div key={uuidv4()}>{form}</div>]);
 
@@ -9,9 +11,11 @@ const Section = ({ form }) => {
   };
 
   return (
-    <div>
+    <div className={style.container}>
       {forms}
-      <button onClick={() => handleAddForm()}>Add</button>
+      <button onClick={() => handleAddForm()} className={style.addButton}>
+        Add
+      </button>
     </div>
   );
 };
