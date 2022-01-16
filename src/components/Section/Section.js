@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import style from './Section.module.scss';
 
 const Section = ({ header, form }) => {
-  const [forms, setForms] = useState([<div key={uuidv4()}>{form}</div>]);
+  const [forms, setForms] = useState([]);
 
   const handleAddForm = () => {
     setForms([...forms, <div key={uuidv4()}>{form}</div>]);
