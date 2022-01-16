@@ -1,5 +1,4 @@
-import { Education } from '../Education/Education';
-import { Experience } from '../Experience/Experience';
+import { FormTemplated } from '../FormTemplated/FormTemplated';
 import { GeneralInfo } from '../GeneralInfo/GeneralInfo';
 import { Section } from '../Section/Section';
 import { SkillsInterests } from '../SkillsInterests/SkillsInterests';
@@ -10,8 +9,26 @@ const Resume = () => {
   return (
     <div className={style.Resume}>
       <GeneralInfo />
-      <Section form={<Experience />} />
-      <Section form={<Education />} />
+      <Section
+        form={
+          <FormTemplated
+            fieldName1="Company"
+            fieldName2="Position"
+            fieldName3="Start — End"
+            fieldName4="Description"
+          />
+        }
+      />
+      <Section
+        form={
+          <FormTemplated
+            fieldName1="School"
+            fieldName2="Degree"
+            fieldName3="Graduation"
+            fieldName4="Description"
+          />
+        }
+      />
       <SkillsInterests />
     </div>
   );
