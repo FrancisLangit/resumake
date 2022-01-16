@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import { FieldDisplay } from './FieldDisplay/FieldDisplay';
-import { FieldForm } from './FieldForm/FieldForm';
+import { FieldDisplay } from '../FieldDisplay/FieldDisplay';
+import { FieldForm } from '../FieldForm/FieldForm';
 
-const Field = ({ name, isTextarea }) => {
+const Field = ({ name, isTextarea, displayStyle }) => {
   const [isForm, setIsForm] = useState(true);
   const [text, setText] = useState('');
 
@@ -18,7 +18,13 @@ const Field = ({ name, isTextarea }) => {
       />
     );
   } else {
-    return <FieldDisplay text={text} setIsForm={setIsForm} />;
+    return (
+      <FieldDisplay
+        text={text}
+        displayStyle={displayStyle}
+        setIsForm={setIsForm}
+      />
+    );
   }
 };
 

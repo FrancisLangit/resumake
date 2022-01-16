@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <Form
       fields={[
-        <Field name="Company" />,
+        <Field name="Company" displayStyle={{ background: 'red' }} />,
         <Field name="Position" />,
         <Field name="Start — End" />,
         <Field name="Description" isTextarea={true} />,
