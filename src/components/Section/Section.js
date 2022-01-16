@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import style from './Section.module.scss';
 
-const Section = ({ form }) => {
+const Section = ({ header, form }) => {
   const [forms, setForms] = useState([<div key={uuidv4()}>{form}</div>]);
 
   const handleAddForm = () => {
@@ -12,6 +12,7 @@ const Section = ({ form }) => {
 
   return (
     <div className={style.container}>
+      <div className={style.header}>{header}</div>
       {forms}
       <button onClick={() => handleAddForm()} className={style.addButton}>
         Add

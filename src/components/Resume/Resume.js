@@ -10,6 +10,7 @@ const Resume = () => {
     <div className={style.Resume}>
       <GeneralInfo />
       <Section
+        header="Experience"
         form={
           <FormTemplated
             fieldName1="Company"
@@ -20,6 +21,7 @@ const Resume = () => {
         }
       />
       <Section
+        header="Education"
         form={
           <FormTemplated
             fieldName1="School"
