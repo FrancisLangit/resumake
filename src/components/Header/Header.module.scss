@@ -8,6 +8,15 @@
   font-weight: bolder;
 }
 
-.subHeader {
-  color: grey;
+.links {
+  font-size: 14px;
+  margin-top: 5px;
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
