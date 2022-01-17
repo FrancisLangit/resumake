@@ -7,11 +7,15 @@ const Form = ({ fields }) => {
   const [isDelete, setIsDelete] = useState(false);
 
   return isDelete ? null : (
-    <div className={style.Form}>
-      {fields.map((f) => (
-        <div key={uuidv4()}>{f}</div>
-      ))}
-      <button onClick={() => setIsDelete(!isDelete)}>Delete</button>
+    <div className={style.container}>
+      <div className={style.fields}>
+        {fields.map((f) => (
+          <div key={uuidv4()}>{f}</div>
+        ))}
+      </div>
+      <button onClick={() => setIsDelete(!isDelete)} className={style.delete}>
+        Delete
+      </button>
     </div>
   );
 };

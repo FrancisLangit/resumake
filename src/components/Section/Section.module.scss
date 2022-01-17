@@ -1,5 +1,24 @@
-.Section {
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 5px solid lightgrey;
+.container {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+}
+
+.header {
+  font-size: 36px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.addButton {
+  $color: #5cb85c;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid $color;
+  color: $color;
+  cursor: pointer;
+  font-family: 'Roboto Mono';
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
 }

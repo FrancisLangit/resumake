@@ -1,19 +1,31 @@
 import { useState } from 'react';
 
-import { FieldButton } from './FieldButton';
-import { FieldText } from './FieldText';
+import { FieldDisplay } from '../FieldDisplay/FieldDisplay';
+import { FieldForm } from '../FieldForm/FieldForm';
 
-const Field = ({ label }) => {
-  const [isEdit, setIsEdit] = useState(true);
+const Field = ({ name, isTextarea, displayStyle }) => {
+  const [isForm, setIsForm] = useState(true);
   const [text, setText] = useState('');
 
-  return (
-    <div>
-      {label}
-      <FieldText isEdit={isEdit} text={text} setText={setText} />
-      <FieldButton isEdit={isEdit} setIsEdit={setIsEdit} />
-    </div>
-  );
+  if (isForm) {
+    return (
+      <FieldForm
+        setIsForm={setIsForm}
+        inputValue={text}
+        setInputValue={setText}
+        inputPlaceholder={name}
+        isTextarea={isTextarea}
+      />
+    );
+  } else {
+    return (
+      <FieldDisplay
+        text={text}
+        displayStyle={displayStyle}
+        setIsForm={setIsForm}
+      />
+    );
+  }
 };
 
 export { Field };

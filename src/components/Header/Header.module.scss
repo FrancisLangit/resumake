@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.subHeader {
+  font-size: 14px;
+}
+
+.links {
+  font-size: 12px;
+  margin-top: 5px;
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

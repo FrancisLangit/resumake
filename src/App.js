@@ -1,16 +1,14 @@
-import { Education } from './components/Education/Education';
-import { Experience } from './components/Experience/Experience';
-import { Field } from './components/Field/Field';
-import { Section } from './components/Section/Section';
+import '@fontsource/roboto-mono';
+import { Body } from './components/Body/Body';
+import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header/Header';
 
 const App = () => {
   return (
-    <div>
-      <Field label="Name" />
-      <Field label="Email" />
-      <Field label="Number" />
-      <Section form={<Education />} />
-      <Section form={<Experience />} />
+    <div style={{ fontFamily: 'Roboto Mono' }}>
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 };
