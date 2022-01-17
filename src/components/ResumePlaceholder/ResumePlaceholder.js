@@ -5,7 +5,7 @@ const ResumePlaceholder = () => {
   return (
     <div className={style.container}>
       <img className={style.gif} src={gif} alt="Funny GIF" />
-      <div className={style.text}>Too small! Move to desktop?</div>
+      <div className={style.text}>Screen too small! Move to desktop?</div>
     </div>
   );
 };
