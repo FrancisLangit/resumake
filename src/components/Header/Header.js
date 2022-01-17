@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className={style.container}>
       <div className={style.header}>Resumake</div>
-      <div>The corporate slave's one-pager, simplified.</div>
+      <div>The corporate slave's one-pager.</div>
       <div className={style.links}>
         <a href="https://github.com/FrancisLangit/resumake">About</a> •{' '}
         <a href="https://github.com/FrancisLangit">Author</a> •{' '}
