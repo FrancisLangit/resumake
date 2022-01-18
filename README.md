@@ -23,7 +23,7 @@ Run such to create a locally constructed instance of the web application. If suc
 ## Usage
 
 ![GIF demonstrating usage of the web application](demo.gif)
-Enter data into the application's form in order to generate your very own customized resume.
+To generate your very own customized resume, enter data into the application's form. Should you wish to make a change to any of the page's fields, simply click on the component of choice and the section should open back up for editing.
 
 ## Contributing
 
