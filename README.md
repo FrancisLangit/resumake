@@ -1,4 +1,4 @@
-# resumake
+![Public banner of the repository](banner.png)
 
 `resumake` is a web application that allows users the utilization of a straightforward resume-building interface. It was built in [partial completion](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/cv-application) of The Odin Project's Full-stack JavaScript Path.
 
