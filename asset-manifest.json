@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/resumake/static/css/main.cb9354ae.css",
+    "main.js": "/resumake/static/js/main.56f32ca4.js",
+    "static/media/error.gif": "/resumake/static/media/error.cc78b8315e496ee91a29.gif",
+    "static/media/roboto-mono-all-400-normal.woff": "/resumake/static/media/roboto-mono-all-400-normal.8c12dec86f8b17eac652.woff",
+    "static/media/roboto-mono-cyrillic-ext-400-normal.woff2": "/resumake/static/media/roboto-mono-cyrillic-ext-400-normal.b60acdafdfd55591eddf.woff2",
+    "static/media/roboto-mono-latin-400-normal.woff2": "/resumake/static/media/roboto-mono-latin-400-normal.535bc89d4af715503b01.woff2",
+    "static/media/roboto-mono-latin-ext-400-normal.woff2": "/resumake/static/media/roboto-mono-latin-ext-400-normal.52237f44c81dd66b90e3.woff2",
+    "static/media/roboto-mono-cyrillic-400-normal.woff2": "/resumake/static/media/roboto-mono-cyrillic-400-normal.3b6a3201563987f5c30c.woff2",
+    "static/media/roboto-mono-greek-400-normal.woff2": "/resumake/static/media/roboto-mono-greek-400-normal.6c5721aefd48c14edd31.woff2",
+    "static/media/roboto-mono-vietnamese-400-normal.woff2": "/resumake/static/media/roboto-mono-vietnamese-400-normal.baa5de8fd025f9a570c0.woff2",
+    "index.html": "/resumake/index.html",
+    "main.cb9354ae.css.map": "/resumake/static/css/main.cb9354ae.css.map",
+    "main.56f32ca4.js.map": "/resumake/static/js/main.56f32ca4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb9354ae.css",
+    "static/js/main.56f32ca4.js"
+  ]
+}
