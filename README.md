@@ -18,7 +18,7 @@ Such will run the app in development mode, allowing one to open up http://localh
 
 ### `npm run build`
 
-Run such to create a locally constructed instance of the web application. If successful, one should fine a `build/` folder generated within the repository.
+Run such to create a locally constructed instance of the web application. If successful, one should find a `build/` folder generated within the repository.
 
 ## Usage
 
